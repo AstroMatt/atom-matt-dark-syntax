@@ -1,0 +1,11 @@
+{
+	"name": "atom-matt-dark-syntax",
+	"theme": "syntax",
+	"version": "1.0.0",
+    "description": "Atom Matt Dark Syntax",
+	"license": "MIT",
+	"repository": "https://github.com/astromatt/atom-matt-light-syntax.git",
+	"engines": {
+		"atom": ">=1.12.7"
+	}
+}
