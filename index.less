@@ -1,11 +1,24 @@
+@background: #223;
+@keyword: #0f0;
+@text: #aab;
+@string: #445;
+
+
+
+.tree-view .selected::before {
+    background: transparent !important;
+}
+
+
+
 .tree-view {
-    background: #242933 !important;
+    background: @background !important;
 }
 
 atom-text-editor,
 .pane {
-    background: #242933 !important;
-    color: #b3b8c3 !important;
+    background: @background !important;
+    color: @text !important;
     padding: 1em;
 }
 
@@ -14,22 +27,17 @@ atom-text-editor,
     line-height: inherit;
 }
 
-.tree-view .selected::before {
-    background: transparent !important;
-}
-
 .tree-view .icon::before {
     font-size: 13px;
 }
 
 .selection .region {
-    background: #343944;
+    background: lighten(@string, 20%) !important;
 }
 
 .cursor {
-    color: #f00;
+    color: red;
 }
-
 
 
 
@@ -38,16 +46,19 @@ atom-text-editor,
 .function,
 .keyword,
 .control {
-    color: #0f0;
+    color: @keyword;
 }
 
+.entity,
+.delimiter,
+.operator,
 .variable,
 .constant,
 .support,
 .punctuation,
 .brace,
 .bracket  {
-    color: #b3b8c3;
+    color: @text;
 }
 
 .arguments, .arguments *,
@@ -55,33 +66,29 @@ atom-text-editor,
 .inherited-class,
 .string,
 .comment {
-    color: #525f6b;
+    color: @string;
 }
-
 
 
 
 .html {
-    color: #525f6b;
+    color: @string;
 }
 
 .html.text {
-    color: #b3b8c3;
+    color: @text;
 }
-
-
-
 
 
 
 .gfm .heading {
-    color: #0f0;
+    color: @keyword;
 }
 
 .gfm .yaml,
 .gfm .bold,
 .gfm .italic {
-    color: #525f6b;
+    color: @string;
 }
 
 .gfm .table {
