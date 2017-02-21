@@ -4,7 +4,7 @@
 	"version": "1.1.2",
     "description": "Atom Matt Dark Syntax",
 	"license": "MIT",
-	"repository": "https://github.com/astromatt/atom-matt-light-syntax.git",
+	"repository": "https://github.com/astromatt/atom-matt-dark-syntax.git",
 	"engines": {
 		"atom": ">=1.12.7"
 	}
