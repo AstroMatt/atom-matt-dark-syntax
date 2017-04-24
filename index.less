@@ -10,8 +10,8 @@
 }
 
 
-wrap-guide {
-	color: @string !important;
+.wrap-guide {
+	background-color: @string !important;
 }
 
 .tab-bar,
@@ -26,9 +26,11 @@ wrap-guide {
 }
 
 atom-workspace,
+.item-views,
 .tree-view {
-    background-color: @background;
+    background-color: @background !important;
     background: @background !important;
+	border-color: @background !important;
 }
 
 .tree-view .list-item {
